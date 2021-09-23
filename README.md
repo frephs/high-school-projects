@@ -1,2 +1,2 @@
 # SchoolProjects
-Website for School Projects i designed back in highschool
+A couple of websites I designed back in highschool for group projects

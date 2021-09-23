@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+     <meta charset="utf-8">
+     <title>Moneta</title>
+     <!--fonts-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!--map-->
+     <link href="../js/mapsvg/nanoscroller.css" rel="stylesheet">
+     <script src="../js/mapsvg/jquery.js"></script>
+     <script src="../js/mapsvg/jquery.mousewheel.min.js"></script>
+     <script src="../js/mapsvg/mapsvg.js"></script>
+     <link href="../js/mapsvg/mapsvg.css" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.6.0/javascripts/jquery.nanoscroller.min.js"></script>
+
+     <!--external-->
+     <link rel="stylesheet" href="../css/normalize.css">
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+     <!--internal-->
+     <link rel="stylesheet" href="../style.css">
+     <link rel="shortcut icon" href="../img/flag0.svg">
+     <link rel="stylesheet" href="../page.css">
+
+</head>
+
+<body>
+
+     <!--BANNER-->
+     <div class="europe-container"></div>
+     <div class="banner page">
+          <div class="navigation">
+               <marquee behavior="slide" direction="left" scrollamount="190" class="u-pull-right">
+                    <a href="../index.html">
+                         <div class="nav-item" style="margin-right: 6%; margin-left:4%; padding: 10px 13px"><span><i class="fa fa-home"></i></span></div>
+                    </a>
+                    <!--What lies behind brexit-->
+                    <a href="brexit.html">
+                         <div class="nav-item"><span>#Brexit</span></div>
+                    </a>
+                    <!--Moneta unica, l'introduzione la storia dell'euro -->
+                    <a href="perks.html">
+                         <div class="nav-item"><span>#Perks</span></div>
+                    </a>
+                    <!--mito di euroa e storia della nascita-->
+                    <a href="istituzioni.html">
+                         <div class="nav-item" href="prova"><span>#Istituzioni</span></div>
+                    </a>
+                    <!--Organi istituzionali e vantaggi-->
+                    <a href="simboli.html">
+                         <div class="nav-item"><span>#Simboli</span></div>
+                    </a>
+                    <!--mito di euroa e storia della nascita-->
+                    <a href="storia.html">
+                         <div class="nav-item"><span>#Storia</span></div>
+                    </a>
+                    <!--mito di euroa e storia della nascita-->
+               </marquee>
+          </div>
+          <div class="titolo-mark" style="left:18.7%"></div>
+          <div class="titolo-pag">
+               <marquee behavior="slide" direction="up" speed="2" scrollamount="70">
+                    <h2>ue/Moneta</h2>
+               </marquee>
+          </div>
+          <div class="sottotitolo-pag">
+               <marquee behavior="slide" direction="up" speed="2" scrollamount="40">
+                    <h3>Moneta</h3>
+               </marquee>
+          </div>
+     </div>
+
+     <div class="wave">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+               <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+               <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+               <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          </svg>
+     </div>
+
+     <!--PAGINA-->
+     <div class="content text">
+          <div class="" style="grid-column:1/4">
+               <div class="int">
+                    L'<span style="font-weight: bold;">Euro</span> è la valuta ufficiale dei paesi della zona euro e quella unica attualmente adottata da 19 dei 27 Stati membri dell'Unione aderenti all'Unione economica e monetaria dell'Unione europea (UEM).
+               </div>
+          </div>
+          <div class="" style="grid-column:1/4">
+               <h1 style="text-align: center;"> Prima dell'Euro </h1>
+               <hr />
+               <div class="articlecontent">
+                    <div class="" style="grid-column:1/4">
+                         <!----tab--->
+                         <style media="screen">
+                         .tab td {padding: 10px;}
+                         </style>
+                         <table class="tab" style="width:100%;">
+                              <caption class="table__caption">
+                                   <p> Prima dell’adozione della moneta unica, ogni stato della UE aveva una propria valuta: </p>
+                              </caption>
+                              <tr style="">
+                                   <th>PAESE</th>
+                                   <th>VALUTA</th>
+                                   <tr>
+                                        <tr>
+                                             <td><img src="../flags/austria.png" style="width:21px; height:auto;"> Austria</td>
+                                             <td>Scellino austriaco</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/belgio.png" style="width:21px; height:auto;"> Belgio</td>
+                                             <td>Franco belga</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/olanda.png" style="width:21px; height:auto;"> Paesi bassi</td>
+                                             <td>Fiorino olandese</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/finlandia.png" style="width:21px; height:auto;"> Finlandia</td>
+                                             <td>Marco finlandese</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/francia.png" style="width:21px; height:auto;"> Francia</td>
+                                             <td>Franco francese</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/germania.png" style="width:21px; height:auto;"> Germania</td>
+                                             <td>Marco tedesco</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/irlanda.png" style="width:21px; height:auto;"> Irlanda</td>
+                                             <td>Sterlina irlandese</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/italia.png" style="width:21px; height:auto;"> Italia</td>
+                                             <td>Lira italiana</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/lussemburgo.png" style="width:21px; height:auto;"> Lussemburgo</td>
+                                             <td>Franco lussemburghese</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/portogallo.png" style="width:21px; height:auto;"> Portogallo</td>
+                                             <td>Scudo portoghese</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/spagna.png" style="width:21px; height:auto;"> Spagna</td>
+                                             <td>Peseta spagnola</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/grecia.png" style="width:21px; height:auto;"> Grecia</td>
+                                             <td>Dracma greca</td>
+
+                                        </tr>
+                                   </table>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="" style="grid-column:1/4">
+                         <!-- La strada verso l'euro -->
+                         <h1 style="text-align: center">La strada verso l'Euro</h1>
+                         <hr>
+                         <div class="articlecontent">
+                              <div style="grid-column:1/3; font-weight: 19px">
+                                   <h2>Stabilità economica</h2>
+                                   <p> La stabilità monetaria internazionale dell'immediato dopoguerra non durò a lungo: i disordini dei mercati valutari internazionali minacciarono il regime di prezzi comuni instaurato nell'ambito della politica agricola comune, uno dei principali pilastri dell'allora Comunità economica europea.
+                                   </p>
+                                   <p> Successivi tentativi di conseguire una stabilità dei tassi di cambio furono scoraggiati dalle crisi del petrolio e da altri shock, fino a quando, nel 1979, venne avviato il Sistema monetario europeo (SME).
+                                   </p>
+                                   <p>Lo SME si basava su un sistema di tassi di cambio usato per mantenere le oscillazioni delle valute partecipanti entro un intervallo ristretto.
+                                   </p>
+                                   <p>Questo approccio completamente nuovo rappresentò una forma di coordinamento delle politiche monetarie tra i paesi dell’UE senza precedenti e funzionò bene per oltre un decennio. Fu però sotto la presidenza di <span style="font-weight: bold;">Jacques Delors</span> che i governatori delle banche centrali dei paesi dell’UE redassero la "relazione Delors" sulle modalità per conseguire l'UEM.
+                                   </p>
+                              </div>
+                              <div class="" style="grid-column:3/4">
+                                   <div class="person">
+                                        <img   class="fr"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Delors_01.jpg/222px-Delors_01.jpg" alt="">
+                                        <h2 style="text-align:center;">Jacques Delors</h2>
+                                        <p class="ignore">Jacques Lucien Jean Delors è un politico ed economista francese. Noto europeista, è stato ministro e presidente della Commissione europea. Delors presiedette la Commissione europea dal gennaio 1985 al gennaio 1995, svolgendo tre mandati consecutivi. </p>
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+
+                    <div class="" style="grid-column:1/4">
+                         <h1 style="text-align:center">Da Maastricht all'euro e all'area dell'Euro, 1991-2002</h1>
+                         <hr />
+                         <div class="articlecontent">
+                              <div style="grid-column:1/2">
+                                   <figure>
+                                        <img style="border-radius: 15px;"src="https://lameladinewton-micromega.blogautore.espresso.repubblica.it/files/2017/02/firma-trattato-di-maastricht-1992-510.jpg">
+                                        <figcaption>
+                                             <p style="text-align:center; padding-left:5px">Firma del trattato di Maastricht (7/2/1992)</p>
+                                        </figcaption>
+                                   </figure>
+                              </div>
+                              <div style="grid-column:2/4; height:470px;overflow-y:scroll;padding-right:30px">
+                                   <p> La relazione Delors proponeva un periodo preparatorio suddiviso in tre fasi, compreso tra il 1990 e il 1999, per giungere a un’unione economica e monetaria e all’area dell’euro.
+                                   </p>
+                                   <p>I leader europei accettarono le raccomandazioni contenute nella relazione Delors. Il nuovo trattato sull'Unione europea, che conteneva le disposizioni necessarie per la creazione dell'Unione monetaria, fu approvato durante il Consiglio europeo di Maastricht, nei Paesi Bassi, nel dicembre 1991. Dopo un decennio di preparativi l'euro venne introdotto il 1° gennaio 1999: durante i primi tre anni fu "invisibile", in quanto utilizzato solo a fini contabili e per i pagamenti elettronici.
+                                   </p>
+                                   <p>
+                                        Le monete e le banconote entrarono in circolazione il 1° gennaio 2002 e in 12 paesi dell'UE si assistette al passaggio a una nuova valuta più rilevante della storia. Le fasi di transizione dalle monete locali all'euro vennero stabilite dalle disposizioni del Trattato di Maastricht del 1992 relative alla creazione dell'Unione economica e monetaria.
+                                   </p>
+                              </div>
+                              <div class=""style="grid-column:1/4">
+                                   <p>
+                                        La nascita ufficiale della moneta unica europea avvenne il 1º gennaio 1999, con un comunicato del Consiglio dei Ministri europei.
+                                   </p>
+                                   <p>
+                                        Il debutto dell'euro sui mercati finanziari risale al 1999, mentre la circolazione monetaria ebbe effettivamente inizio il 1º gennaio 2002 nei dodici Paesi dell'Unione che per primi hanno adottato la nuova valuta. In Italia l'euro venne sperimentato per la prima volta nei comuni di Fiesole e Pontassieve per sei mesi a partire dal 1º ottobre 1999.
+                                   </p>
+                                   <!----tab--->
+                                   <style media="screen">
+                                   .tab td {padding: 10px;}
+
+                                   </style>
+                                   <p>Dopo il 2002, altri Stati hanno soddisfatto i requisiti per adottare l’euro: </p>
+                                   <table class="tab" style="width:100%">
+
+                                        <tr style="">
+                                             <th>PAESE</th>
+                                             <th>VALUTA PRECEDENTE</th>
+                                             <th>ANNO DI ADOTTAMENTO</th>
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/slovenia.png" style="width:21px; height:auto;"> Slovenia</td>
+                                             <td>Tallero sloveno</td>
+                                             <td>1º gennaio 2007</td>
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/cipro.png" style="width:21px; height:auto;"> Cipro</td>
+                                             <td>Sterlina cipriota</td>
+                                             <td>1º gennaio 2007</td>
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/malta.png" style="width:21px; height:auto;"> Malta</td>
+                                             <td>Lira maltese</td>
+                                             <td>1º gennaio 2007</td>
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/slovacchia.png" style="width:21px; height:auto;"> Slovacchia</td>
+                                             <td>Corona slovacca</td>
+                                             <td>1º gennaio 2009</td>
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/estonia.png" style="width:21px; height:auto;"> Estonia</td>
+                                             <td>Corona estone</td>
+                                             <td>1º gennaio 2011</td>
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/lettonia.png" style="width:21px; height:auto;"> Lettonia</td>
+                                             <td>Lats lettone</td>
+                                             <td>1º gennaio 2014</td>
+                                        </tr>
+                                        <tr>
+                                             <td><img src="../flags/lituania.png" style="width:21px; height:auto;"> Lituania</td>
+                                             <td>Litas lituano</td>
+                                             <td>1º gennaio 2015</td>
+                                        </tr>
+
+                                   </table>
+                              </div>
+                              <div class="" style="grid-column:1/4; padding-top:30px;" >
+                                   <h2> Chi non ha adottato l'Euro</h2>
+                                   <p>Di seguito i paese membri che non intendono adottare l'euro</p>
+                                   <style media="screen">
+                                   .tab td {padding: 10px;}
+                                   </style>
+                                   <table class="tab" style="width:100%">
+                                        <tr style="">
+                                             <th>PAESE</th>
+                                             <th>INGRESSO NELLA UE</th>
+                                             <th>MONETA CORRENTE</th>
+                                             <tr>
+                                                  <tr>
+                                                       <td><img src="../flags/danimarca.png" style="width:21px; height:auto;"> Danimarca</td>
+                                                       <td>1º gennaio 1973</td>
+                                                       <td>Corona danese</td>
+                                                  </tr>
+                                             </table>
+                                             <br>
+                                             <table class="tab" style="width:100%; margin-right:auto">
+                                                  <caption class="table__caption">
+                                                       <p> Stati UE non aventi ancora l'euro ma obbligati ad adottarlo in futuro in base al fatto che non godono di clausole di opting-out: </p>
+                                                  </caption>
+                                                  <tr>
+                                                       <th>PAESE</th>
+                                                       <th>INGRESSO NELLA UE</th>
+                                                       <th>MONETA CORRENTE</th>
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/svezia.png" style="width:21px; height:auto;"> Svezia</td>
+                                                       <td>1º gennaio 1995</td>
+                                                       <td>Corona svedese</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/repubblica ceca.png" style="width:21px; height:auto;"> Rep. Ceca </td>
+                                                       <td>1º maggio 2004</td>
+                                                       <td>Corona ceca</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/ungheria.png" style="width:21px; height:auto;"> Ungheria</td>
+                                                       <td>1º maggio 2004</td>
+                                                       <td>Fiorino ungherese</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/polonia.png" style="width:21px; height:auto;"> Polonia</td>
+                                                       <td>1º maggio 2004</td>
+                                                       <td>Złoty polacco</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/bulgaria.png" style="width:21px; height:auto;"> Bulgaria</td>
+                                                       <td>1º gennaio 2007</td>
+                                                       <td>Lev bulgaro</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/romania.png" style="width:21px; height:auto;"> Romania</td>
+                                                       <td>1º gennaio 2007</td>
+                                                       <td>Leu rumeno</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/croazia.png" style="width:21px; height:auto;"> Croazia</td>
+                                                       <td>1º luglio 2013</td>
+                                                       <td>Kuna croata</td>
+                                                  </tr>
+                                             </table>
+                                             <p>L'opting out è una clausola di esenzione ovvero uno strumento atto a garantire che quando un paese non vuole associarsi agli altri con riguardo a un particolare settore della politica dell’Unione, può non partecipare, evitando una situazione di stallo generale.</p>
+                                        </div>
+                                        <div class="" style="grid-column:1/4">
+                                             <h2>Stati fuori dall'Unione Europea che hanno adottato l'euro</h2>
+                                             <table class="tab" style="width:90%; margin-right:auto;">
+                                                  <tr>
+                                                       <th>PAESI</th>
+                                                       <th>MODALITA' DI ADOZIONE</th>
+                                                  </tr>
+
+                                                  <tr>
+                                                       <td><img src="../flags/vaticano.png" style="width:21px; height:auto;"> Città del Vaticano</td>
+                                                       <td>Accordo con l'UE tramite l'Italia</td>
+
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/san marino.png" style="width:21px; height:auto;"> San Marino</td>
+                                                       <td>Accordo con l'UE tramite l'Italia</td>
+
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/monaco.png" style="width:21px; height:auto;"> Principato di Monaco</td>
+                                                       <td>Accordo con l'UE tramite la Francia</td>
+
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/andorra.png" style="width:21px; height:auto;"> Andorra</td>
+                                                       <td>Accordo con l'UE</td>
+
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/montenegro.png" style="width:21px; height:auto;"> Montenegro</td>
+                                                       <td>Adozione unilaterale</td>
+
+                                                  </tr>
+                                                  <tr>
+                                                       <td><img src="../flags/kosovo.png" style="width:21px; height:auto;"> Kosovo* </td>
+                                                       <td>Adozione unilaterale</td>
+                                                  </tr>
+                                             </table>
+                                             <p style="margin-bottom:0px"> *In Kosovo la minoranza serba utilizza il Dinaro serbo </p>
+                                        </div>
+
+                                   </div>
+
+                              </div>
+                              <div class="" style="grid-column:1/4">
+                                   <h1 style="text-align: center">Perché una moneta comune?</h1>
+                                   <hr>
+                                   <div class="articlecontent">
+                                        <div class="" style="grid-column:1/4">
+                                             <h2>I vantaggi</h2>
+                                             Fin dalla fine degli anni Sessanta l'Unione economica e monetaria (UEM) era stata un'ambizione ricorrente dell'Unione europea. L'UEM comporta il coordinamento delle politiche economiche e finanziarie, una politica monetaria comune e una moneta unica, l'euro, che offre diversi vantaggi:
+                                             <ul style="list-style-type:square; text-align:left">
+                                                  <li>Scambi transfrontalieri più veloci;</li>
+                                                  <li>L’economia ottiene risultati migliori</li>
+                                                  <li>Scelta più ampia e maggiori opportunità per i consumatori</li>
+                                             </ul>
+                                             La strada verso l'UEM è stata però colma di ostacoli politici ed economici: a turno, infatti, lo scarso impegno politico, le difformità di vedute riguardo alle priorità dell'economia e le turbolenze dei mercati internazionali hanno costituito altrettanti scogli da superare per garantire il progresso verso l'Unione economica e monetaria.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="" style="grid-column:1/4">
+                                   <h1 style="text-align:center">Gli effetti della moneta unica</h1>
+                                   <hr>
+                                   <div class="articlecontent">
+                                        <div class=""  style="grid-column:1/4">
+                                             <h2>Gli effetti</h2>
+                                             <p>L'effetto principale dell'introduzione della moneta unica è l'eliminazione dei rischi e costi di cambio; viene inoltre incrementata l'interdipendenza economica e una facilitazione del commercio tra stati membri. Questo avrebbe dovuto portare benefici a tutti i cittadini dell'eurozona, in quanto l'incremento dei commerci è storicamente una delle forze guida della crescita economica.
+                                             </p>
+                                             <p>
+                                                  Nei fatti il risultato è stato opposto, poiché si è registrata una riduzione ed un accentramento delle attività commerciali e finanziarie.
+                                                  Inoltre, la moneta unica si inserisce nel piano a lungo termine di un mercato unico all’interno dell’Unione.
+                                             </p>
+                                             <p>
+                                                  Un secondo effetto è una riduzione nelle fluttuazioni dei prezzi, ovvero un maggior contenimento dell'inflazione a vantaggio dei grandi detentori di capitali. In alcuni Stati (tra cui l'Italia, Francia, Paesi Bassi, Germania, Austria, Grecia) hanno preso piede movimenti politici cosiddetti Euroscettici che chiedono o una revisione dei Trattati internazionali oppure un ritorno alla valuta nazionale con svalutazione della moneta per rendere competitivi, col tasso di cambio, i prodotti per l'esportazione. Se da un lato questo potrebbe, in teoria, facilitare l'esportazione, per via del nuovo tasso di cambio, dall'altro lato (secondo alcune teorie) gli effetti dell'inflazione annullerebbero questa competitività.
+                                             </p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="" style="grid-column:1/4; text-align:center ">
+                                   <h1>Credits</h1>
+                                   <hr>
+                                   <div class="articlecontent3">
+                                        <div class="sez"  style="text-align: left" >
+                                             <h2 style="text-align: left">
+                                                  Ricerca
+                                             </h2>
+                                             <a href="mailto:federico.bagini@liceobramante.edu.it">
+                                                  <div class="contributions">
+                                                       <div> <img src="../img/fp/1.jpg" alt="Federico Bagini"></div>
+                                                       <div>Federico Bagini</div>
+                                                  </div>
+                                             </a>
+                                             <a href="mailto:gabriele.rocca@liceobramante.edu.it">
+                                                  <div class="contributions">
+                                                       <div> <img src="../img/fp/15.jpg" alt="Gabriele Rocca"></div>
+                                                       <div>Gabriele Rocca</div>
+                                                  </div>
+                                             </a>
+                                             <a href="mailto:mattia.malvisi@liceobramante.edu.it">
+                                                  <div class="contributions">
+                                                       <div> <img src="../img/fp/11.jpg" alt="Mattia Malvisi"></div>
+                                                       <div>Mattia Malvisi</div>
+                                                  </div>
+                                             </a>
+                                             <a href="mailto:edoardo.villa@liceobramante.edu.it">
+                                                  <div class="contributions">
+                                                       <div> <img src="../img/fp/19.jpg" alt="Edoardo Villa"></div>
+                                                       <div>Edoardo Villa</div>
+                                                  </div>
+                                             </a>
+                                        </div>
+
+                                        <div class="sez" style="width:200%">
+                                             <h2 style="text-align: left">
+                                                  Layout e stilying
+                                             </h2>
+                                             <a href="mailto:federico.bagini@liceobramante.edu.it">
+                                                  <div class="contributions">
+                                                       <div> <img src="../img/fp/1.jpg" alt="Federico Bagini"></div>
+                                                       <div>Federico Bagini</div>
+                                                  </div>
+                                             </a>
+                                                  <a href="mailto:mattia.malvisi@liceobramante.edu.it">
+                                                       <div class="contributions">
+                                                            <div> <img src="../img/fp/11.jpg" alt="Mattia Malvisi"></div>
+                                                            <div>Mattia Malvisi</div>
+                                                       </div>
+                                                  </a>
+                                                  <a href="mailto:francesco.genovese@liceobramante.edu.it">
+                                                       <div class="contributions">
+                                                            <div>
+                                                                 <img src="../img/fp/10.jpg" alt="Francesco Genovese">
+                                                            </div>
+                                                            <div>Francesco Genovese</div>
+                                                       </div>
+                                                  </a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+
+                    </div>
+
+                    <br>
+
+                    <!---FOOTER --->
+                    <div class="wave-1" style="margin-top:30px;">
+                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                              <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                         </svg>
+                    </div>
+                    <div style="" id="footer" class="footer">
+                         <div class="column" style="grid-row:1/3">
+                              <h2>Powered by</h2>
+                              <div class="">
+                                   <a href="https://w3c.org" style="text-decoration:none;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="html" height="50">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css" height="50">
+                                        <img src="https://www.probytes.net/wp-content/uploads/2018/07/javascript-logo-E967E87D74-seeklogo.com_.png" alt="js" height="50">
+                                   </a>
+                              </div>
+                              <div class="">
+                                   Questo sito è <b>open source</b> controlla i sorgente qui: <br>
+                              </div>
+                              <div class="">
+                                   <a onclick="viewSource()" target="_blank" class="source inline-link" style="color:red;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="html" height="15">HTML
+                                   </a>
+                                   <a class="codice inline-link" href="js/script.js" style="color:orange;">
+                                        <img src="https://www.probytes.net/wp-content/uploads/2018/07/javascript-logo-E967E87D74-seeklogo.com_.png" alt="js" height="16"> Javascript (map) </a>
+                                   </a>
+                                   <a href="style.css" class="codice inline-link">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css" height="15"> CSS (generale)
+                                   </a>
+                                   <a href="frontpage.css" class="codice inline-link">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css" height="15"> CSS (frontpage)
+                                   </a>
+
+                              </div>
+
+                         </div>
+                         <div class="column">
+                              <h2>Realizzato da </h2>
+                              <div class="">
+                                   <p>Made with<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2017%2F09%2F23%2F16%2F33%2Fpixel-heart-2779422_960_720.png&f=1&nofb=1" alt="" height="25" style="vertical-align:bottom;"> by
+                                        5C
+                                   </p>
+                              </div>
+                         </div>
+                         <div class="column">
+                              <h2>Certificazione</h2>
+                              <div class="">
+                                   Validato dal consorzio
+                                   <a href="https://validator.w3.org/">
+                                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fed%2FW3C%25C2%25AE_Icon.svg%2F1280px-W3C%25C2%25AE_Icon.svg.png&f=1&nofb=1" alt="w3c" height="20" style="vertical-align:bottom">
+                                        <br><img style="margin-top:10px;" src="https://turnpassionintorevenue.com/wp-content/uploads/2016/12/easiest-way-to-learn-coding-2017.png" alt="w3schools" height="30">
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="column" style="grid-column:2/4">
+                              <h2>
+                                   <a style="width:100%;color:rgba(255,255,255,0.8); background-color:rgba(255,255,255,0.1); padding: 10px; border-radius:10px; font-size:0.75em" href="#top"> <span><i class="fa fa-home"></i></span> Torna sù</a>
+                              </h2>
+                         </div>
+                    </div>
+               </div>
+
+               <!--correzione onda svg--->
+               <script type="text/javascript">
+               function viewSource(){;
+                   var source = "<html>";
+                   source += document.getElementsByTagName('html')[0].innerHTML;
+                   source += "</html>";
+                   source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                   source = "<pre>"+source+"</pre>";
+                   sourceWindow = window.open('','Source of page','height=800,width=800,scrollbars=1,resizable=1');
+                   sourceWindow.document.write(source);
+                   sourceWindow.document.close();
+                   if(window.focus) sourceWindow.focus();
+               }
+
+
+               // correzioni onda svg
+               $(".wave-1 svg path")[0].style.strokeWidth = 0;
+               $(".wave-1 svg path")[1].style.strokeWidth = 0;
+               $(".wave-1 svg path")[2].style.strokeWidth = 0;
+               $(".wave-1 svg path")[2].style.marginBottom = -10;
+               $(".navigation a").hover(
+                    function(){
+                         $(this).children("div").children("span").css("color", "yellow");
+                         $(this).children("div").css("opacity", "100%");
+                         $(this).children("div").css("background-color", "3949AB");
+                    },
+                    function(){
+                         $(this).children("div").css("opacity", "70%");
+                         $(this).children("div").children("span").css("color", "white");
+                    }
+               );
+               </script>
+          </body>
+
+          </html>

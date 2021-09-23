@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+     <meta charset="utf-8">
+     <style media="screen">
+          body {
+               margin: 0% 10% ;
+               font-family: calibri;
+               font-size: 2rem;
+          }
+          a {
+               display: inline-block;
+               margin: 10px;
+               color: white;
+               background: black;
+               padding: 30px;
+               border-radius: 15px;
+          }
+          input {
+               padding:10px;
+               border-radius: 7px;
+               border: solid 1.5px black;
+          }
+          textarea {
+               padding:10px;
+               border-radius: 7px;
+               border: solid 1.5px black;
+          }
+          body:not(h3){
+               color: rgba(0,0,0,0.6)
+          }
+          h3{
+               color: black;
+          }
+          input[type="text"], textarea{
+               width:100%;
+               margin:5px;
+          }
+     </style>
+     <title>Invia una mail al preside</title>
+</head>
+<body>
+     <form>
+          <h3>Dimmi chi sei</h3>
+          <hr>
+          <input type="radio" name="stato" value="1" checked> Studente di prima, seconda o terza <br>
+          <input type="radio" name="stato" value="2"> Studente di quarta o quinta <br>
+          <input type="radio" name="stato" value="3"> Genitore di prima, seconda o terza <br>
+          <input type="radio" name="stato" value="4"> Genitore di quarta o quinta <br>
+          <input type="radio" name="stato" value="3"> Docente <br>
+          <h3>Mail</h3>
+          <hr>
+          <table>
+               <tr>
+                    <td>
+                         Titolo
+                    </td>
+                    <td>
+                         <input type="text" name="" value="Orario"> <br>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         Testo della comunicazione
+                    </td>
+                    <td>
+                         <textarea name="name" rows="8" cols="80"></textarea>
+                    </td>
+               </tr>
+          </table>
+          <br>
+          <a id="email">Manda la mail!</a>
+     </form>
+
+
+
+
+     <script type="text/javascript">
+          var link = document.getElementById('email');
+          link.onclick = function() {
+               this.href = "mailto:francesco.genovese+orario@liceobramante.edu.it?subject='Hey'&body=";
+               this.href += getBody();
+          };
+
+          function getBody() {
+               return 'Hello World';
+          }
+     </script>
+
+</body>
+</html>

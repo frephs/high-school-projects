@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+     <meta charset="utf-8">
+     <title>Brexit</title>
+     <!--fonts-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!--map-->
+     <link href="../js/mapsvg/nanoscroller.css" rel="stylesheet">
+     <script src="../js/mapsvg/jquery.js"></script>
+     <script src="../js/mapsvg/jquery.mousewheel.min.js"></script>
+     <script src="../js/mapsvg/mapsvg.js"></script>
+     <link href="../js/mapsvg/mapsvg.css" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.6.0/javascripts/jquery.nanoscroller.min.js"></script>
+
+     <!--external-->
+     <link rel="stylesheet" href="../css/normalize.css">
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+     <!--internal-->
+     <link rel="stylesheet" href="../style.css">
+     <link rel="shortcut icon" href="../img/flag0.svg">
+     <link rel="stylesheet" href="../page.css">
+
+</head>
+
+<body>
+
+     <!--BANNER-->
+     <div class="europe-container"></div>
+     <div class="banner page">
+          <div class="navigation">
+               <marquee behavior="slide" direction="left" scrollamount="190" class="u-pull-right">
+                    <a href="../index.html">
+                         <div class="nav-item" style="margin-right: 6%; margin-left:4%; padding: 10px 13px"><span><i class="fa fa-home"></i></span></div>
+                    </a>
+                    <!--What lies behind brexit-->
+                    <a href="perks.html">
+                         <div class="nav-item"><span>#Perks</span></div>
+                    </a>
+                    <!--mito di euroa e storia della nascita-->
+                    <a href="istituzioni.html">
+                         <div class="nav-item" href="prova"><span>#Istituzioni</span></div>
+                    </a>
+                    <!--Organi istituzionali e vantaggi-->
+                    <a href="moneta.html">
+                         <div class="nav-item"><span>#Moneta</span></div>
+                    </a>
+                    <!--Moneta unica, l'introduzione la storia dell'euro -->
+                    <a href="simboli.html">
+                         <div class="nav-item"><span>#Simboli</span></div>
+                    </a>
+                    <!--mito di euroa e storia della nascita-->
+                    <a href="storia.html">
+                         <div class="nav-item"><span>#Storia</span></div>
+                    </a>
+                    <!--mito di euroa e storia della nascita-->
+               </marquee>
+          </div>
+          <div class="titolo-mark"></div>
+          <div class="titolo-pag">
+               <marquee behavior="slide" direction="up" speed="2" scrollamount="70">
+                    <h2>ue/Brexit</h2>
+               </marquee>
+          </div>
+          <div class="sottotitolo-pag">
+               <marquee behavior="slide" direction="up" speed="2" scrollamount="40">
+                    <h3>What lies behind Brexit?
+                    </h3>
+               </marquee>
+               <h3 style="margin:10px">
+                    <a href="brexit.html" style="border:none; padding:10px; color: white; background-color:rgba(0,0,0,0.2); border-radius:20px; font-size :0.6em;margin:5px;">Switch to English</a><br>
+               </h3>
+          </div>
+     </div>
+
+     <div class="wave">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+               <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+               <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+               <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          </svg>
+     </div>
+     <!--PAGINA-->
+     <div class="content text">
+          <div style="grid-column: 1/4">
+               <h1 style="text-align: center; ">BREXIT</h1>
+               <hr>
+               <div class="articlecontent">
+                    <div style="grid-column:1/4">
+                         <p>Prima del referendum del 23 giugno 2016 ci fu una campagna elettorale che espose i diversi argomenti in favore di lasciare l’unione europea oppure restare nell’unione europea. Questa campagna elettorale andò in onda come pubblicità, girò sui vari social e furono appesi manifesti per le città; tutto ciò influenzò le scelte dei cittadini britannici anche se tutto ciò che vi era scritto non era del tutto vero e giusto. Questi slogan furono un modo per influenzare le persone a votare si, senza che sapessero veramente per cosa stavano votando. Infatti dopo il referndum del 23 giugno, furono molte le persone che chiesero di tornare di nuovo alle urne perché si accorsero di non aver capito l’importanza di stare dentro l’unione europea e l’importanza di questo referendum. Ma la ex prima ministra Theresa May disse “brexit è brexit” e da qui iniziarono tutte le trattative per lasciare l’Europa.</p>
+                    </div>
+                    <div style="grid-column:1/4">
+                         <h2><b>La propaganda per l'uscita dall’Unione Europea citava:m</b></h2>
+                         <ul style="text-align:left">
+                              <li>Se votiamo per uscire, riprenderemo il controllo e potremo spendere i nostri soldi nelle nostre priorità.
+                              </li>
+                              <li> Votando di uscire, risparmieremo oltre 3oo milioni di sterline alla settimana da poter investire nelle strutture pubbliche del paese come scuole e ospedali invece di supportare le richieste dell’Unione Europea. Ad esempio nel NHS e non nell’UE. </li>
+                              <li> Riprenderemo il controllo dei nostri confini e di conseguenza scegliere chi può entrare e come, senza le regole dell’UE.</li>
+                              <li>Controlleremo in modo migliore l’immigrazione, imponendo le nostre regole per il controllo degli ingressi.
+                              </li>
+                              <li>Potremo commerciare con il mondo intero e con i nostri alleati come Australia, Nuova Zelanda e India, senza le regole di commercio imposte dall’UE.</li>
+                              <li>Potremo scegliere le nostre leggi.</li>
+                              <li> Siamo la quinta potenza economica del mondo e siamo tra i migliori quattro in ambito militare. Potremo essere un normale paese democrazia che se la cava da solo.</li>
+                         </ul>
+                    </div>
+                    <div style="grid-column:1/4; tex-align:left">
+                         <h2><b>Le Menzogne raccontate riguardo il rimanere nell'unione europea:</b></h2>
+                         <ul style="text-align:left">
+                              <li> Votare di rimanere nell’Unione Europea sarebbe una minaccia per i nostri lavori e la nostra sicurezza.</li>
+                              <li>L’immigrazione nel nostro paese continua ad essere fuori controllo. Molti immigrati provengono dai paesi più poveri dell’unione europea, ad esempio dalla Turchia, in cerca di miglior vita.</li>
+                              <li>Dobbiamo continuare a salvare gli € perché è sempre in crisi. I paesi che usano l'euro hanno già una maggioranza incorporata, il che significa che possono sempre superarci.</li>
+                              <li>Rimanendo nell’unione europea, tale corte sarà ancora responsabile delle nostre leggi.</li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+
+          <div style="grid-column:1/4">
+               <h1>I risultati del referendum</h1>
+               <hr>
+               <div class="articlecontent">
+                    <div style="grid-column:1/4">
+                         <p>L’affluenza al referendum fu del 72.2%, con oltre 30 milioni di persone che hanno espresso la propria preferenza. Con una netta divisione tra le varie fasce di età: mentre i più giovani hanno votato per restare nell’unione europea; la maggioranza degli anziani ha votato per la brexit. Storia tutta diversa per Scozia e Irlanda del Nord, dove la maggioranza della popolazione ha votato per rimanere, ma il voto aggregato ha comunque fatto vincere il Leave con una percentuale complessiva del 51.9%.</p>
+                         <img src="brexit/2016-brexit-referendum-.png" style="zoom: 0.50; padding-right: 200px; padding-left: 200px; border-radius: 25px"><img src="brexit/voting-age-statistics.png" style="zoom: 0.50; border-radius: 25px">
+                    </div>
+               </div>
+          </div>
+          <div style="grid-column:1/4">
+               <h1>I problemi del Regno Unito e i compromessi con l'UE</h1>
+               <hr>
+               <div class="articlecontent">
+                    <div style="grid-column:1/4">
+                         <p> L’uscita del Regno Unito dall’UE avrà conseguenze non solo sugli inglesi ma su tutta l’economia mondiale, infatti la brexit ha portato molti problemi nel Regno per i quali, durante il periodo di transizione, si cercheranno compromessi con l’UE oppure ci sarà un inevitabile no-deal.</p>
+                    </div>
+                    <div style="grid-column:1/4">
+                         <p>
+                              Per due mesi sembra che le due parti abbiano imboccato un vicolo cieco, con ognuna delle due che chiede all’altra di cedere qualcosa per arrivare a un accordo. Ma senza sforzi diplomatici ci sarebbero gravi conseguenze economiche sia per l’ UE che per il Regno Unito e quest’ultimo potrebbe subire le perdite più pesanti. in data 13 dicembre 2020, formalmente ultimo giorno di trattative tra Ursula von del Leyen e Boris Johnson, risulta che le trattative sul nuovo accordo commerciale proseguiranno a oltranza </p>
+                              <p>Le trattative procedono con difficoltà soprattutto sul cosiddetto level playing field, cioè le regole che dovrebbero impedire alle aziende britanniche di fare concorrenza sleale a quelle europee. Nei giorni scorsi i negoziatori europei avevano chiesto alla controparte britannica di introdurre una clausola per obbligare il Regno Unito a mantenere aggiornati i propri standard ambientali e lavorativi nel medio-lungo termine: ma i negoziatori britannici avevano accusato l’Unione Europea di volere di fatto mantenere il paese completamente allineato agli attuali standard europei.</p>
+                              <p>I negoziatori stanno anche discutendo dell’accesso alle acque britanniche da parte dei pescatori europei. L’Unione Europea ha chiarito che, nel caso in cui fosse impedito l’accesso ai propri pescherecci, ai pescatori britannici non sarebbe concesso un accesso privilegiato per la vendita dei loro beni sui mercati europei. Il Regno Unito sostiene che ciò che avviene nelle proprie acque non possa essere deciso da entità ora esterne come l’Unione Europea. Il governo britannico ha inoltre confermato che la marina militare si sta preparando a pattugliare le acque, nel caso in cui non si raggiungesse un accordo. </p>
+                              <p>Un altro punto di negoziazione sul quale non sembra esserci ancora un solido accordo riguarda i meccanismi che Regno Unito e Unione Europea dovrebbero adottare per risolvere eventuali controversie legali.</p>
+                              Il 19/12/2020 il parlamento britannico avverte che il governo non è ancora in grado di dire con certezza ad aziende, commercianti e cittadini cosa accadrà ai settori coinvolti. Da questa data mancano solo 12 giorni alla fine del periodo di transizione, ma è certo che il Regno Unito non è sufficientemente preparato per l'uscita dal mercato unico europeo.</p>
+                              <p>La Gran Bretagna e l'Unione Europea hanno salutato l'accordo sul commercio e la cooperazione siglato la vigilia di Natale come un trionfo per i loro negoziatori che hanno garantito i loro interessi dopo la Brexit il 1 ° gennaio. Ma l'accordo, che copre questioni come la sicurezza, l'energia, i trasporti e il benessere sociale nonché il commercio, ha comportato compromessi da entrambe le parti e lascia la Gran Bretagna con una relazione economica significativamente più debole con l'UE.
+                              </p>
+                         </div>
+                    </div>
+               </div>
+               <div style="grid-column:1/4">
+                    <h1>Persone</h1>
+                    <hr>
+
+                    <div class="person">
+                         <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.hellomagazine.com%2Fimagenes%2Fprofiles%2Fmargaret-thatcher%2F6043-margaret-thatcher.jpg&f=1&nofb=1" alt="">
+                         <h2>Margaret Tatcher</h2>
+                         <p>Politica inglese, è stata Primo Ministro inglese dal 1979 al 1990.</p>
+                         <button type="button" name="button" onclick="modal('m3', 0, 'open');">Leggi di più</button>
+                    </div>
+                    <div class="person">
+                         <img src="https://pbs.twimg.com/profile_images/664868323377717248/E7dALt_-.jpg" alt="">
+                         <h2>David Cameron</h2>
+                         <p>Politico inglese, Primo Ministro del Regno Unito dal 2010 al 2016.
+                         </p>
+                         <button type="button" name="button" onclick="modal('m1', 0, 'open');">Leggi di più</button>
+                    </div>
+                    <div id="m1" class="modal">
+                         <!-- Modal content -->
+                         <div class="modal-content">
+                              <span class="close" onclick="modal('m1', 0, 'close');">&times;</span>
+                              <h1>David Cameron</h1>
+                              <p>Nel febbraio 2016 l’allora Primo Ministro inglese e leader del Partito Conservatore David Cameron negozia un nuovo accordo con Bruxelles e decide di indire il referendum per far esprimere gli elettori sulla permanenza o meno del Regno Unito nell’Unione Europea.</p>
+                         </div>
+                    </div>
+                    <div id="m2" class="modal">
+                         <!-- Modal content -->
+                         <div class="modal-content">
+                              <span class="close" onclick="modal('m2', 0, 'close');">&times;</span>
+                              <h1>Ursula von der Leyen</h1>
+                              <p>Ursula Gertrud von der Leyen è una politica tedesca, membro della CDU e Presidente della Commissione Europea dal 1º dicembre 2019. Notoriamente filo-europeista, prima della sua designazione Ursula Von der Leyen ha affermato che considera la Brexit “una bolla di promesse vuote gonfiata da populisti» e «una perdita per tutti» e ha dichiarato che il no deal, ovvero l’ipotesi di un’uscita del Regno Unito senza accordo con l’Ue, «è il peggiore scenario possibile».</p>
+                         </div>
+                    </div>
+                    <div id="m3" class="modal">
+                         <!-- Modal content -->
+                         <div class="modal-content">
+                              <span class="close" onclick="modal('m3', 0, 'close');">&times;</span>
+                              <h1>Margaret Tatcher 1925-2013</h1>
+                              <p>Fu Primo ministro del Regno Unito dal 4 maggio 1979 al 28 novembre 1990, prima donna ad aver ricoperto tale incarico ed è inoltre il primo ministro con il mandato più lungo in tutta la storia del Regno Unito. Dal 1975 al 1990 fu inoltre leader del Partito conservatore britannico. La rivoluzione thatcheriana le è valsa l’attribuzione del termine thatcherismo, termine che sta a indicare il piglio decisionista, le dottrine economiche monetariste e neoliberista, incentrate sui tagli alla spesa pubblica e alle tasse e le politiche pubbliche a sostegno dell’offerta.
+                              </p>
+                         </div>
+                    </div>
+                    <div class="person">
+                         <img src="https://pbs.twimg.com/profile_images/936639677121081344/_e5l_DEG_400x400.jpg" alt="">
+                         <h2>Theresa May</h2>
+                         <p>Politica inglese, è stata Primo Ministro dal 2016 al 2019.</p>
+                         <button type="button" name="button" onclick="modal('m5', 0, 'open');">Leggi di più</button>
+                    </div>
+                    <div class="person">
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg" alt="">
+                         <h2>Boris Johnson</h2>
+                         <p>Politico inglese, attuale Primo Ministro del Regno Unito</p>
+                         <button type="button" name="button" onclick="modal('m4', 0, 'open');">Leggi di più</button>
+                    </div>
+                    <div class="person" style="max-width:370px">
+                         <img src="https://www.bundestag.de/resource/image/521600/2x3/316/475/bc5cbe1b5c607a2a75cd6286e0624d42/tu/von_der_leyen_ursula_gross.jpg" alt="">
+                         <h2>Ursula von der Leyen</h2>
+                         <p>Politica tedesca, presidentessa della commisione europea dal 2019.</p>
+                         <button type="button" name="button" onclick="modal('m2', 0, 'open');">Leggi di più</button>
+                    </div>
+                    <div id="m4" class="modal">
+                         <!-- Modal content -->
+                         <div class="modal-content">
+                              <span class="close" onclick="modal('m4', 0, 'close');">&times;</span>
+                              <h1>Boris Johnson</h1>
+                              <p>Diventato primo ministro,anche Johnson però ha trovato gli stessi problema della May con il suo nuovo accordo siglato con Bruxelles che è stato ugualmente bocciato dalla Camera dei Comuni. Inevitabile di conseguenza la richiesta in tempi celeri di un voto anticipato, con l’ex sindaco di Londra che con le elezioni spera di ottenere una ampia maggioranza che gli possa permettere di far passare il proprio accordo sulla Brexit. Johnson ha potuto far approvare il proprio accordo sulla Brexit con il Regno Unito che lo scorso 30 gennaio è ufficialmente uscito dall’Unione Europea dopo anni di trattative.
+                              </p>
+                         </div>
+                    </div>
+
+                    <div id="m5" class="modal">
+                         <!-- Modal content -->
+                         <div class="modal-content">
+                              <span class="close" onclick="modal('m5', 0, 'close');">&times;</span>
+                              <h1>Theresa May</h1>
+                              <p>Vincendo le primarie, Theresa May è chiamata a sostituire David Cameron e diventa il nuovo primo ministro britannico. Anche la May è schierata sulla politica del remain ma, portando avanti il motto “Brexit means Brexit” mostra comunque di voler rimanere fedele al risultato della votazione e promette di trovare un accordo. Nel 2017, Theresa May consegna al presidente del Consiglio europeo Donald Tusk la richiesta ufficiale di attivazione dell’articolo 50. Si tratta della cosiddetta Clausola di Recesso del trattato sull’Unione Europea che prevede il recesso volontario e unilaterale di un paese dall’UE. </p>
+                         </div>
+                    </div>
+               </div>
+
+               <div style="grid-column:1/4">
+                    <h1>Gli effetti della Brexit</h1>
+                    <hr>
+                    <div class="articlecontent">
+                         <style media="screen">
+                         h3{text-align:left;}
+                         </style>
+                         <div style="grid-column:1/4; text-align:justify">
+                              <p>
+                                   Il 19/12/2020 il parlamento britannico avverte che il governo non è ancora in grado di dire con certezza ad aziende, commercianti e cittadini cosa accadrà ai settori coinvolti. Da questa data mancano solo 12 giorni alla fine del periodo di transizione, ma è certo che il Regno Unito non è sufficientemente preparato per l'uscita dal mercato unico europeo.
+                              </p>
+                              <h3>FRONTIERA</h3>
+                              <p> Dal 2021 tornerà una frontiera tra l'Inghilterra e l'Unione Europea. Essendo un'isola, già oggi il paese è separato dal resto del continente. Ci vorrà però un confine fisico tra l'Irlanda del Nord, che appartiene a UK, e la Repubblica d'Irlanda, stato membro della UE. Aerei e navi già oggi quando arrivano in UK, devono effettuare controlli di frontiera e operazioni doganali. Fino alla scadenza del periodo di transizione è stato trovato un accordo tra Repubblica d’Irlanda e Irlanda del Nord, cui confini subiranno controlli meno approfonditi per quanto riguarda la circolazione delle merci e delle persone.
+                              </p>
+                              <p>
+                                   <h3>IL PROBLEMA DELLA SCOZIA</h3>La Scozia è la nazione più europeista del Regno Unito e non ha nessuna voglia di dire addio a Bruxelles. L’unica via, secondo la premier Nicola Strugeon, è un referendum che riporti Edimburgo in Europa e che la Scozia diventi una nazione indipendente. Ma il Regno Unito continua a declinare questa proposta per ciò la Scozia cercherà di influenzare “i negoziati in modo che possano portare benefici alla Scozia, al Regno Unito e all’UE. E in particolare continueranno a sottolineare l’importanza di avere relazioni commerciali più strette possibile.
+                              </p>
+                              <p>
+                                   <h3>PASSAPORTO E VISTO</h3> Dal 1° gennaio 2021 il Regno Unito diventerà un paese straniero a tutti gli effetti e dal 1 febbraio, formalmente il Regno Unito non farà più parte dell'area di libera circolazione di persone e merci. Fino ad ora e per tutto il periodo di transizione, che si conclude con la fine del 2020, la carta di identità sarà ancora accettata per entrare a visitare il paese. Dal 2021, invece, per entrare in UK, a qualsiasi titolo, occorrerà avere un passaporto. Inoltre sarà dunque necessario un visto, per vivere e lavorare nel paese. Infine, se tu desideri visitare il Regno Unito durante una piccola vacanza, ti basta avere insieme al tuo passaporto un visto turistico con durata di tre mesi e mostrarli alle autorità al tuo arrivo in aeroporto.
+                              </p>
+                              <p>
+                                   <h3>MERCI</h3> Al centro dell'accordo c'è l'accesso senza dazi e quote al reciproco mercato delle merci, il che lo rende più espansivo di qualsiasi accordo commerciale che l'UE ha precedentemente concordato con altre grandi economie. Ma l'affermazione di Boris Johnson secondo cui l'accordo elimina anche le barriere non tariffarie al commercio non è corretta. Le due parti hanno concordato di introdurre schemi di commercianti di fiducia e sistemi di autoverifica per ridurre l'impatto della dogana rigida e del confine normativo che si applicherà a tutte le parti del Regno Unito ad eccezione dell'Irlanda del Nord dal 1 ° gennaio. Ma ci saranno ancora controlli e una maggiore burocrazia che renderanno il commercio più costoso e macchinoso e le autorizzazioni per i prodotti britannici non saranno più automaticamente accettate dalle autorità di regolamentazione dell'UE.
+                              </p>
+                              <p>
+                                   <h3>STUDENTI ED ERASMUS</h3> Servirà un visto anche per gli studenti che arriveranno nel paese per delle brevi vacanze-studio. Mentre storia tutta diversa riguarda università ed erasmus dove molti programmi saranno modificati o del tutto eliminati. Hanno confermato che introdurrano un proprio progetto in merito agli scambi tra studenti e confermano che continueranno a fare parte dell’iniziativa di ricerca scientifica europea chiamata “Horizon Europe”.
+                              </p>
+                              <p>
+                                   <h3>IMMIGRAZIONE</h3> Non ci saranno limiti all'immigrazione legale, ma solo se prima di entrare nel Regno Unito avranno già un contratto di lavoro con un’azienda inglese e che il salario annuo sia più di 30mila sterline l'anno. La misura serve a limitare l'ingresso di manodopera non specializzata e favorire l'ingresso di lavoratori stranieri qualificati.
+                              </p>
+                              <p>
+                                   <h3>CITTADINI UE CHE VIVONO NEL UK</h3> Nel Regno Unito si trovano oggi tantissime persone provenienti da altri Paesi UE ed extra UE. Ai cittadini che vivono in Gran Bretagna da almeno 5 anni sarà concessa l’opportunità di richiedere (entro e non oltre dicembre 2020) un permesso di soggiorno permanente. A coloro che risiedono nel Paese da meno di 5 anni invece toccherà richiedere un permesso temporaneo che avrà validità soltanto quinquennale. I cittadini europei che non si metteranno in regola rischieranno di essere buttati fuori dal Regno Unito, stando a quanto emerso dalla linea dura di Johnson. Chi vorrà trasferirsi nel Regno Unito sarà ammesso soltanto dopo aver dimostrato di aver già ottenuto un lavoro. Ogni cittadino europeo dovrà comunque versare una quota di 625 sterline al servizio sanitario nazionale.
+                              </p>
+                              <p>
+                                   <h3>QUESTIONE SULLA PESCA: </h3>La pesca è stata tra le questioni più controverse nei negoziati, l'ultima ad essere concordata e l'unica in cui la Gran Bretagna era chiaramente in una posizione più forte. Ma il risultato ha comportato un'enorme scalata per Johnson, che fino a poche settimane fa chiedeva una riduzione dell'80% in tre anni del valore del pesce catturato nelle acque britanniche. La richiesta di apertura dell'UE per non modificare il suo attuale accesso alle acque britanniche era chiaramente irrealistica, ma in base all'accordo, le barche europee perderanno solo il 25% del loro pescato, con i cambiamenti che si protrarranno in oltre 5 anni e mezzo. Dopodiché, le quote per le barche dell'UE verranno stabilite nei negoziati annuali ma se la Gran Bretagna limita drasticamente l'accesso alle sue acque, l'UE può reagire chiudendo le acque dell'UE alle barche britanniche o imponendo tariffe. Il blocco ha abbandonato la richiesta di poter imporre sanzioni su altri elementi del commercio britannico in risposta a qualsiasi controversia sulla pesca.
+                              </p>
+
+                         </div>
+                    </div>
+               </div>
+               <div style="grid-column:1/4">
+                    <h1>Timeline</h1>
+                    <hr>
+                    <p>Ecco una timeline</p>
+                    <style media="screen">
+                         table tr td {
+                              border: solid 1px rgba(0,0,0,0.1);
+                         }
+
+                    </style>
+                    <table class="tab">
+                         <thead>
+                              <th width="30%">Data</th> <th>Evento</th>
+                         </thead>
+                         <tr class="">
+                              <td>1957</td><td>Il 25 marzo 1957, vengono firmati i Trattati di Roma, considerati come l'atto di nascita della grande famiglia europea. Il primo istituisce una Comunità economica europea (CEE), il secondo invece una Comunità europea dell'energia atomica, meglio conosciuta come Euratom.
+                                   <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/948104/EU-UK_Trade_and_Cooperation_Agreement_24.12.2020.pdf" class="inline-link" style="color: red"> Agreement</a>
+                              </td>
+                         </tr>
+                         <tbody>
+                              <tr><td>1963</td><td>L'Inghilterra chiede di aderire alla CEE</td></tr>
+                              <tr><td>1973</td><td>L'Inghilterra entra a far parte del comunità economica europea</td></tr>
+                              <tr><td>1975</td><td>Referendum sulla permanenza del Regno Unito nelle Comunità europee e si concluse con un'indicazione di approvazione con il 67,23% dei consensi dei britannici </td></tr>
+                              <tr><td>1984</td><td>Le tensioni tra la CEE e il Regno Unito sono esplose quando il primo ministro conservatore Margaret Thatcher annunciò di voler ridurre i pagamenti britannici al bilancio della CEE.</td></tr>
+                              <tr><td>1993</td><td>Trattato di Maastricht che è entrato in vigore e ha creato l'Unione Europea (UE) con sede a Bruxelles, di cui la CEE, ribattezzata semplicemente Comunità Europea (CE) è stata la componente principale</td></tr>
+                              <tr><td>1997</td><td>Le elezioni generali nel Regno Unito. Esse hanno visto la vittoria del Partito Laburista di Tony Blair, che è divenuto Primo Ministro, era fortemente filoeuropeo e ha lavorato per ricostruire i legami con il resto dell'Europa mentre era in carica</td></tr>
+                              <tr><td>Fine anni 90</td><td>Europa e Regno lottano per la carne bovina  poiché Bruxelles ha imposto un divieto alla carne bovina britannica nel bel mezzo dello spavento della "mucca pazza" e sul cioccolato britannico.</td></tr>
+                              <tr><td>1999-2000</td><td>Il divieto generale dell'UE è stato revocato. Dopo una battaglia durata 27 anni ne uscì vittoriosa la Corte di giustizia europea in Lussemburgo, il cioccolato britannico e la carne bovina potettero  essere venduti  nel resto d'Europa.</td></tr>
+                              <tr><td>2007</td><td>Il Trattato di Lisbona, noto anche come Trattato di riforma e ufficialmente Trattato di Lisbona che modifica il trattato sull'Unione Europea e il trattato che istituisce la Comunità europea, è uno dei trattati dell'Unione Europea, che ha apportato ampie modifiche al Trattato sull'Unione europea e al Trattato che istituisce la Comunità europea. Rispetto al precedente Trattato, quello di Nizza, esso abolisce i cosiddetti "tre pilastri", rafforza il principio democratico e la tutela dei diritti fondamentali, anche attraverso l'attribuzione alla Carta di Nizza del medesimo valore giuridico dei trattati.</td></tr>
+                              <tr><td>2011</td><td>Nell'interesse di proteggere il settore finanziario britannico, David Cameron è diventato il primo ministro britannico a porre il veto a un trattato UE, non ci furono precedenti,</td></tr>
+                              <tr><td>2013</td><td>Cameron ha promesso di rinegoziare l'adesione all'UE se il suo partito conservatore avesse ottenuto la maggioranza nelle prossime elezioni generali. Allo stesso tempo, cresceva il sostegno tra gli elettori britannici per il un partito politico britannico euroscettico, populista e sovranista, che è stato costituito nel 2019. Ha ventinove eurodeputati, che sono stati originariamente eletti nelle liste del Partito per l'Indipendenza del Regno Unito (UKIP). È guidato da uno di questi eurodeputati, l'ex leader dell'UKIP</td></tr>
+                              <tr><td>Maggio 2015</td><td>Dopo aver vinto la rielezione, Cameron rinegoziò le relazioni Regno Unito-UE, compresi i cambiamenti nei pagamenti del welfare dei migranti e garanzie finanziarie,</td></tr>
+                              <tr><td>Febbraio 2016</td><td>Cameron annunciò i risultati di quei negoziati e fissò la data del referendum promesso che dava la possibilità al Regno Unito di lasciare l'UE</td></tr>
+                              <tr><td>23 giugno 2016</td><td>Il referendum passò con un sottile margine dal 51,9% al 48,1%, ma c'erano forti differenze nel Regno Unito</td></tr>
+                              <tr><td>Ottobre 2016</td><td>Il primo ministro Theresa  May, che aveva assunto la carica in seguito alle dimissioni di David Cameron, annunciò  la sua intenzione di invocare l'articolo 50 del trattato sull'Unione europea, notificando formalmente l'intenzione della Gran Bretagna di lasciare l'UE</td></tr>
+                              <tr><td>29 marzo 2017</td><td>L'ordine è stato consegnato al Consiglio dell'Unione Europea, dando ufficialmente inizio al conto alla rovescia di due anni per la partenza della Gran Bretagna dall'UE, ora provvisoriamente fissato per il 30 marzo 2019</td></tr>
+                              <tr><td>2019</td><td>Quattro volte quest'anno (a gennaio, due a marzo, maggio) il Parlamento ha respinto categoricamente il piano che la signora May ha negoziato con l'Unione europea per l'uscita, noto come Brexit, gli stati europei accettarono  due volte di posticipare la data di uscita</td></tr>
+                              <tr><td>23 maggio 2019</td><td>Le elezioni per il Parlamento europeo si svolgono nel Regno Unito anche se la Gran Bretagna intende andarsene. Il Brexit Party, un partito politico britannico euroscettico, populista e sovranista, che è stato costituito nel 2019 e guidato dall'ex leader dell'UKIP (Partito per l'Indipendenza del Regno Unito) è stato il chiaro vincitore alle elezioni europee del Regno Unito.</td></tr>
+                              <tr><td>24 maggio 2019</td><td>May annunciò ufficialmente le sue dimissioni da leader conservatore, non essendo in grado di consegnare la Brexit</td></tr>
+                              <tr><td>31 ottobre 2019</td><td>I leader europei insistettero per un ritardo più lungo questa volta e fissarono il 31 ottobre come nuova scadenza per la Brexit.</td></tr>
+                              <tr><td>12 novembre 2019</td><td>revoca accettata</td></tr>
+                              <tr><td>31 gennaio 2020</td><td>Il Regno Unito ha lasciato l'Unione europea, Un periodo di transizione è attualmente in vigore fino al 31 dicembre 2020.</td></tr>
+                              <tr><td>31 dicembre 2020</td><td>Scadenza del periodo di transizione.</td></tr>
+                              <tr><td></td></tr>
+                         </tbody></table>
+                    </div>
+                    <div style="grid-column:1/4">
+                         <h1>Fonti</h1>
+                         <hr>
+                         <style media="screen">
+                         a .link{ margin:5px;} a.inline{display:inline-block}
+                         </style>
+                         <p>Ecco le nostre fonti</p>
+                         <a class="inline" href="brexit/eu-uk_relations_from_the_uk_referendum_to_a_new_trade_and_cooperation_agreement_-_infographic.pdf">
+                              <div class="link">
+                                   <img class="contained" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F179%2F179483.png&f=1&nofb=1" alt="">
+                                   <span class="title">Infografica</span>
+                                   <span class="sub">brexit/eu-uk_relations_from_the_uk_referendum_to_a_new_trade_and_cooperation_agreement_-_infographic.pdf</span>
+                              </div>
+                         </a>
+                         <a class="inline" href="brexit/eu-uk_relations-from_the_uk_referendum_to_a_new_trade_and_cooperation_agreement-timeline.pdf">
+                              <div class="link">
+                                   <img class="contained" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F179%2F179483.png&f=1&nofb=1" alt="">
+                                   <span class="title">Timeline</span>
+                                   <span class="sub">brexit/eu-uk_relations-from_the_uk_referendum_to_a_new_trade_and_cooperation_agreement-timeline.pdf</span>
+                              </div>
+                         </a>
+                         <a class="inline" href="brexit/eu-uk_trade_and_cooperation_agreement-a_new_relationship_with_big_changes-overview_of_consequences_and_benefits.pdf">
+                              <div class="link">
+                                   <img class="contained" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F179%2F179483.png&f=1&nofb=1" alt="">
+                                   <span class="title">Benefits</span>
+                                   <span class="sub">brexit/eu-uk_trade_and_cooperation_agreement-a_new_relationship_with_big_changes-overview_of_consequences_and_benefits.pdf</span>
+                              </div>
+                         </a>
+                         <a class="inline" href="brexit/6_pager_final.pdf">
+                              <div class="link">
+                                   <img class="contained" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F179%2F179483.png&f=1&nofb=1" alt="">
+                                   <span class="title">Accordo finale</span>
+                                   <span class="sub">https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F179%2F179483.png&f=1&nofb=1</span>
+                              </div>
+                         </a>
+
+                    </div>
+                    <div class="" style="grid-column:1/4; text-align:center ">
+                         <h1>Credits</h1>
+                         <hr>
+                         <div class="articlecontent3">
+                              <style media="screen">
+                              a .contributions{ margin:5px}
+                              </style>
+                              <div class="sez" style="text-align: left">
+                                   <h2 style="text-align: left">
+                                        Ricerca
+                                   </h2>
+                                   <a href="mailto:monica.villa@liceobramente.edu.it">
+                                        <div class="contributions">
+                                             <div> <img src="../img/fp/20.jpg" alt="Monica Villa"></div>
+                                             <div>Monica Villa</div>
+                                        </div>
+                                   </a>
+                                   <a href="mailto:matteo.cattaneo@liceobramante.edu.it">
+                                        <div class="contributions">
+                                             <div> <img src="../img/fp/4.jpg" alt="Matteo Cattaneo"></div>
+                                             <div>Matteo Cattaneo</div>
+                                        </div>
+                                   </a>
+                                   <a href="mailto: michele.piccione@liceobramante.edu.it">
+                                        <div class="contributions">
+                                             <div> <img src="../img/flag.svg" alt=""></div>
+                                             <div>Michele Piccione</div>
+                                        </div>
+                                   </a>
+                              </div>
+                              <div class="sez">
+                                   <h2 style="text-align: left">
+                                        Ringraziamenti
+                                   </h2>
+                                   <a href="mailto:elisabetta.spaggiari@liceobramente.edu.it">
+                                        <div class="contributions">
+                                             <div> <img src="../img/flag.svg" alt="Elisabetta Spaggiari"></div>
+                                             <div>Prof.ssa Spaggiari</div>
+                                        </div>
+                                   </a>
+                              </div>
+                              <div class="sez">
+                                   <h2 style="text-align: left">
+                                        Layout e stilying
+                                   </h2>
+                                   <a href="mailto:mattia.malvisi@liceobramante.edu.it">
+                                        <div class="contributions">
+                                             <div> <img src="../img/fp/11.jpg" alt="Mattia Malvisi"></div>
+                                             <div>Mattia Malvisi</div>
+                                        </div>
+                                   </a>
+                                   <a href="mailto:francesco.genovese@liceobramante.edu.it">
+                                        <div class="contributions">
+                                             <div>
+                                                  <img src="../img/fp/10.jpg" alt="Francesco Genovese">
+                                             </div>
+                                             <div>Francesco Genovese</div>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!---FOOTER --->
+          <div class="wave-1" style="margin-top:30px;">
+               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+               </svg>
+          </div>
+          <div style="" id="footer" class="footer">
+               <div class="column" style="grid-row:1/3">
+                    <h2>Powered by</h2>
+                    <div class="">
+                         <a href="https://w3c.org" style="text-decoration:none;">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="html" height="50">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css" height="50">
+                              <img src="https://www.probytes.net/wp-content/uploads/2018/07/javascript-logo-E967E87D74-seeklogo.com_.png" alt="js" height="50">
+                         </a>
+                    </div>
+                    <div class="">
+                         Questo sito è <b>open source</b> controlla i sorgente qui: <br>
+                    </div>
+                    <div class="">
+                         <a onclick="viewSource();" target="_blank" class="source inline-link" style="color:red;">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="html" height="15">HTML
+                         </a>
+                         <a class="codice inline-link" href="js/map.js" style="color:orange;">
+                              <img src="https://www.probytes.net/wp-content/uploads/2018/07/javascript-logo-E967E87D74-seeklogo.com_.png" alt="js" height="16"> Javascript (map) </a>
+
+                              <a href="style.css" class="codice inline-link">
+                                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css" height="15"> CSS (generale)
+                              </a>
+                              <a href="frontpage.css" class="codice inline-link">
+                                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css" height="15"> CSS (frontpage)
+                              </a>
+
+                         </div>
+
+                    </div>
+                    <div class="column">
+                         <h2>Realizzato da </h2>
+                         <div class="">
+                              <p>Made with<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2017%2F09%2F23%2F16%2F33%2Fpixel-heart-2779422_960_720.png&amp;f=1&amp;nofb=1" alt="" height="25" style="vertical-align:bottom;"> by 5C
+                              </p>
+                         </div>
+                    </div>
+                    <div class="column">
+                         <h2>Certificazione</h2>
+                         <div class="">
+                              Validato dal consorzio
+                              <a href="https://validator.w3.org/">
+                                   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fed%2FW3C%25C2%25AE_Icon.svg%2F1280px-W3C%25C2%25AE_Icon.svg.png&amp;f=1&amp;nofb=1" alt="w3c" height="20" style="vertical-align:bottom">
+                                   <br><img style="margin-top:10px;" src="https://turnpassionintorevenue.com/wp-content/uploads/2016/12/easiest-way-to-learn-coding-2017.png" alt="w3schools" height="30">
+                              </a>
+                         </div>
+                    </div>
+                    <div class="column" style="grid-column:2/4">
+                         <h2>
+                              <a style="color:rgba(255,255,255,0.8); background-color:rgba(255,255,255,0.1); padding: 10px; border-radius:10px; font-size:0.75em;" href="#top"> <span><i class="fa fa-home"></i></span> Torna sù</a>
+                         </h2>
+                    </div>
+               </div>
+          </div>
+
+          <!--correzione onda svg--->
+          <script type="text/javascript">
+          function modal(id, n, action) {
+               var modal = document.getElementById(id);
+               var span = document.getElementsByClassName("close")[n];
+               if (action == "open")
+               modal.style.display = "block";
+               if (action == "close")
+               modal.style.display = "none";
+          }
+          // correzioni onda svg
+          $(".wave-1 svg path")[0].style.strokeWidth = 0;
+          $(".wave-1 svg path")[1].style.strokeWidth = 0;
+          $(".wave-1 svg path")[2].style.strokeWidth = 0;
+          $(".wave-1 svg path")[2].style.marginBottom = -10;
+          $(".navigation a").hover(
+               function(){
+                    $(this).children("div").children("span").css("color", "yellow");
+                    $(this).children("div").css("opacity", "100%");
+                    $(this).children("div").css("background-color", "3949AB");
+               },
+               function(){
+                    $(this).children("div").css("opacity", "70%");
+                    $(this).children("div").children("span").css("color", "white");
+               }
+          );
+          </script>
+     </body>
+
+     </html>

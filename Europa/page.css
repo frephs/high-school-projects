@@ -1,0 +1,112 @@
+.fullwidth{
+grid-column: 1/4;
+}
+
+.left{text-align: left}
+
+.page {
+     display: grid;
+     grid-template-columns: 1fr 1.5fr;
+     grid-template-rows: 80px 80px 40px;
+}
+
+.navigation {
+     grid-column: 2;
+     grid-row: 1;
+}
+
+.titolo-pag {
+     grid-column: 1;
+     grid-row: 1/4;
+}
+.sottotitolo-pag {
+     grid-row: 2;
+     grid-column: 2;
+     height: 100%;
+}
+
+
+.titolo-pag h2{
+     display: block;
+     font-size: 5em;
+     color: white;
+     text-shadow: 6px 10px 10px rgba(0,0,0,0.5);
+     margin-bottom: 30px;
+     text-align: center;
+}
+
+.sottotitolo-pag h3{
+     display: block;
+     margin-top: 25px;
+     color: rgba(255,255,255,0.6);
+     font-size: 1.7em;
+     margin-bottom: 0px;
+     text-align: center;
+     text-shadow: 3px 3px 13px rgba(0,0,0,0.5), 10px 10px 10px rgba(0,0,0,0.4);
+}
+
+.titolo-mark{
+     position: absolute;
+     top:90px;
+     left:21%;
+     opacity: 0.8;
+     background: url("img/flag.svg");
+     width: 30%;
+     height: 57%;
+     background-size: 150px;
+     background-repeat: no-repeat;
+     animation: spin 1s;
+     transform-origin: 75px 75px;
+
+}
+
+.bandiere div {
+     margin: 5px;
+}
+.bandiere div label {
+     height: 0px;
+     margin: 0px;
+     text-align: center;
+}
+
+.bandiere input[type=radio] {
+     position: absolute;
+     opacity: 0;
+     width: 0;
+     height: 0;
+}
+
+/* IMAGE STYLES */
+.bandiere div input[type=radio] + label {
+     cursor: pointer;
+}
+
+.bandiere div {
+     display: inline-block;
+}
+.bandiere div {
+     padding-bottom: 5px;
+}
+
+.bandiere div label {
+     margin:-3px;
+}
+.bandiere div label img{
+     border-radius: 6px 6px 0px 0px;
+}
+
+.bandiere input[type="button"] {
+     padding:15px;
+     margin:10px;
+     background-color: rgba(0,51,153, 0.9);
+     border-radius: 20px;
+     color: white;
+     border: none;
+     box-shadow: 0 7px 7px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.20);
+}
+
+
+
+.hidden {
+
+}

@@ -1,0 +1,38 @@
+
+.frontpage{
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     grid-template-areas: "navigation navigation" "title logo";
+}
+
+
+
+.banner .title{
+     grid-area: title;
+     color: white;
+     text-align: center;
+}
+
+.banner .title h1 {
+     font-family: 'Varela Round', serif;
+     font-size: 7.5em;
+     text-transform: uppercase;
+     margin-bottom: 40px;
+     margin-top: 40px;
+     text-shadow: 6px 10px 10px rgba(0,0,0,0.5);
+     text-align: center;
+}
+
+.banner .title h3{
+     font-size: 1.5em;
+     opacity:60%;
+     text-align: center;
+     text-shadow: 3px 3px 13px rgba(0,0,0,0.5), 10px 10px 10px rgba(0,0,0,0.4);
+     margin-bottom: 60px;
+
+}
+
+
+.banner .logo {
+     grid-area: logo;
+}
